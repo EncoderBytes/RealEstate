@@ -1,0 +1,177 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+  .mosterrat{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  .poppins{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  .dm-sans{
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+  }
+  /* home page */
+.width-75 {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3333;
+}
+
+
+
+.navbar-brand {
+    margin-top: -10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background: #26285B;
+}
+
+/* for header text */
+.info-header {
+    margin-top: 100px;
+}
+
+
+/* for making a circle around the icon of the footer */
+.circle-div-text{
+    width:50px;height:50px; font-size:15px; line-height: 25px; border-radius: 50%;
+    background: #2387c01f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* for building text  */
+.building-text{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background: rgba(125, 145, 201, 0.25);
+}
+.building-down-text{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    background:#26285B; color:white; left:0px; padding: 3px 10px;
+}
+@media only screen and (max-width: 991px) {
+
+    /* line 26, E:/161 Real estate/161_Real_state_html/sass/_menu.scss */
+    .navbar {
+        position: block;
+    }
+
+    .navbar-brand {
+        width: 50px;
+    }
+
+    .navbar ul {
+        background: white;
+
+    }
+
+    .info-header {
+        margin-top: 80px;
+    }
+
+    /* building text */
+    .building-text{
+        display: block;
+        height: fit-content;
+        width: 100%;
+        background: none;
+    }
+    .building-down-text{
+        position: relative;
+    }
+}
+
+/* colors */
+.text-color-white{
+    color: white;
+}
+.color-dark-blue{
+color:#26285B;
+}
+.bg-dark-blue{
+    background:#26285B;
+    }
+.color-blue-50{
+    color:#7D91C9;
+}
+.bg-blue-50{
+    background:#7D91C9;
+}
+.color-brown{
+    color:#7A7A7A;
+}
+.color-blue-30{
+    color:#60BBEE;
+}
+/*  FONT SIZE AND COLOR */
+.vision-text {
+    font-style: normal;
+    font-weight: 0;
+    font-size: 76px;
+    line-height: 117px;
+    color: #26285B;
+}
+
+@media only screen and (max-width: 991px) {
+    .vision-text {
+        font-size: 56px;
+        line-height: 58px;
+    }
+    .text-color-white{
+        color: black;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .vision-text {
+        font-size: 40px;
+        line-height: 38px;
+    }
+    .width-75{
+        width:98%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        text-align: justify;
+    }
+}
+
+
+/* images */
+.bulding-img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin-right: -10px;
+}
+
+@media only screen and (max-width: 1190px) and (min-width:991px) {
+    .bulding-img {
+        width: 90%;
+        height: auto;
+
+       
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .bulding-img {
+        width: 0%;
+        height: 0px;
+    }
+   
+}
+

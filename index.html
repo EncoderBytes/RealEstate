@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real Estate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .footerMain {
+      margin-top: 400px;
+      width: 100%;
+      height: fit-content;
+    }
+
+    .what-we-done {
+      height: 560px;
+      margin-top: -255px;
+      background: linear-gradient(252.11deg, #26285B 0%, #1F213F 59.71%)
+    }
+
+    .ownerImage {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .owner-img {
+      position: relative;
+    }
+
+    .owner-img .owner-info {
+      width: 280px;
+      height: fit-content;
+      position: absolute;
+      bottom: -100px;
+      left: 140px;
+    }
+
+    .cotation {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-top: -50px;
+    }
+
+
+
+    @media only screen and (max-width: 992px) and (min-width:771px) {
+      .footerMain {
+        height: fit-content;
+      }
+
+      .footerMain .row {
+        row-gap: 50px;
+      }
+
+      .what-we-done {
+        height: fit-content;
+        padding: 30px 10px;
+        margin-top: -255px;
+        background: linear-gradient(252.11deg, #26285B 0%, #1F213F 59.71%)
+      }
+
+      .owner-img {
+        width: 90%;
+      }
+
+      .owner-img .owner-info {
+        width: 280px;
+        height: fit-content;
+        position: absolute;
+        bottom: -30px;
+        left: auto;
+        right: 120px;
+      }
+
+    }
+
+    @media only screen and (max-width: 770px) {
+      .footerMain {
+        height: fit-content;
+      }
+
+      .what-we-done {
+        height: fit-content;
+      }
+
+      .owner-img {
+        margin: 0px auto;
+      }
+
+      .owner-img .card img {
+        margin: 0px auto;
+      }
+
+      .owner-img .owner-info {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        top: -50px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+    @media only screen and (max-width: 770px) {
+      .footerMain {
+        height: fit-content;
+      }
+
+      .what-we-done {
+        height: fit-content;
+        width: 100%;
+      }
+
+      .owner-img {
+        margin: 0px auto;
+      }
+
+      .owner-img .card img {
+        margin: 0px auto;
+      }
+
+      .owner-img .owner-info {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        top: -50px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ownerImage {
+        width: 90%;
+      }
+    }
+
+    /* architecture section code  */
+    .architect img{
+        width:70%; height:auto; object-fit: cover;
+      }
+      .architc-info{
+        position: absolute; width: 290px; left: 40%;
+          right: 0;
+          top: 30%;
+          bottom: 0;
+          margin: auto;
+      }
+      @media only screen and (max-width: 770px) {
+        .architect img{
+          width:100%;
+        }
+      }
+      @media only screen and (max-width: 550px) {
+        .architc-picture-building{
+          height: 450px;
+        }
+        .architc-info{
+         
+          position: relative;
+          left: 0; bottom:0px;
+          top:-200px;
+        }
+      }
+
+      @media only screen and (max-width: 380px) {
+        .architc-picture-building{
+          height:400px;
+        }
+      }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="container position-relative w-100">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container ">
+          <a class="navbar-brand" href="/"><img src="./pictures/logo.png" style="width:50%;
+                height:auto;" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-2 gap-0 column-gap-5
+                text-center rounded">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="./Src/services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Src/team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Src/news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Src/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Src/contact.html">Contact Us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row h-75 min-vh-75 align-items-center">
+      <div class="col-lg-7 col-md-10 col-sm-12 d-flex align-items-center ">
+        <section class="width-75 info-header mosterrat">
+          <div class="vision-text">
+            <b>Jan’s</b> Vision
+          </div>
+          <h3 class="color-dark-blue">
+            Real Estate Consultants
+          </h3>
+          <h5 class="color-blue-50">
+            Marketing & Developers Pvt Ltd
+          </h5>
+          <p class="color-brown py-2">​More than 100 building and housing
+            projects that we have built.
+            The building owner chose us over other contractors in Jakarta,
+            because our work is different</p>
+
+          <button class="btn rounded-0 px-3 py-2 poppins text-white" style="background:#0A72AD">
+            Discover More
+          </button>
+          <div class="row py-3 poppins">
+            <div class="col-md-3 col-sm-4 col-4 overflow-hidden">
+              <h1 class="fw-bold color-dark-blue">
+                300<span class="color-blue-30">+</span>
+              </h1>
+              <p style="width:100px;  font-size:18px" class="color-brown">Happy
+                Client</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 overflow-hidden">
+              <h1 class="fw-bold color-dark-blue">900<span class="color-blue-30">+</span></h1>
+              <p style="width:100px;  font-size:18px" class="color-brown">Amazing
+                Projects</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-4">
+              <h1 class="fw-bold color-dark-blue">20<span class="color-blue-30">+</span></h1>
+              <p style="width:100px;  font-size:18px" class="color-brown">Awards
+                Winning</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-lg-5 col-md-10 pt-5 building-text overflow-hidden">
+        <img src="./pictures/Frame.png" class="bulding-img" alt="">
+
+        <div class="building-down-text d-flex align-items-center">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class=" mx-auto d-flex flex-column text-center">
+                <h1>25<span style="font-size:16px;">Years</span></h1>
+                <h6>Operated</h6>
+              </div>
+            </div>
+           <div class="col-md-8 col-sm-12">
+            <p class="">
+              As a trusted general project that has been
+              operating for 25 years, our commitment is
+              always to prioritize our client satisfaction
+            </p>
+           </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- icons -->
+    <div class="container py-5">
+      <div class="row gap-0 row-gap-3">
+        <div class="col-md-2 col-sm-4 mx-auto">
+          <div class="card border-0 mx-auto">
+            <img src="./pictures/adira.png" alt="" style="width:100px;
+                height:50px;" class="card-img-top mx-auto">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mx-auto">
+          <div class="card border-0 mx-auto">
+            <img src="./pictures/adhimix.png" alt="" class="card-img-top
+                mx-auto" style="width:100px; height:50px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mx-auto">
+          <div class="card border-0 mx-auto">
+            <img src="./pictures/Holcim_.png" alt="" class="card-img-top
+                mx-auto " style="width:100px; height:50px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mx-auto">
+          <div class="card border-0 mx-auto">
+            <img src="./pictures/mnc.png" alt="" class="card-img-top mx-auto" style="width:100px; height:50px;">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mx-auto">
+          <div class="card border-0 mx-auto">
+            <img src="./pictures/Telkomsel.png" alt="" class="card-img-top
+                mx-auto" style="width:100px; height:50px;">
+          </div>
+        </div>
+      </div>
+      <!-- <img src="./pictures/adira.png" alt="" style="width:100px; height:auto;">
+        <img src="./pictures/adhimix.png" alt="" style="width:100px; height:auto;">
+        <img src="./pictures/Holcim_.png" alt="" style="width:100px; height:auto;">
+        <img src="./pictures/mnc.png" alt="" style="width:100px; height:auto;">
+        <img src="./pictures/Telkomsel.png" alt="" style="width:100px; height:auto;"> -->
+    </div>
+
+    <!-- services -->
+    <div class="container py-5 mt-3">
+      <div class="row">
+        <div class="col-md-6 col-sm-10 mx-auto text-center">
+          <h1>
+            Our Services
+          </h1>
+        </div>
+
+        <div class="col-md-6 col-sm-10 mx-auto">
+          <p class="color-brown">
+            Check out our best service you can possibly orders in building
+            your company and don't forget to ask via our email or our
+            customer service if you are interested in using our services
+          </p>
+        </div>
+      </div>
+
+      <!-- pictures -->
+      <div class="row py-5">
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="./pictures/marketing.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="card-title fw-bold fs-5">
+                Marketing
+              </div>
+              <div class="card-text" style="text-align:justify">
+                Industrial development is our main
+                line of business. We do Factory
+                Construction, Warehouse and others
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="./pictures/Consultation.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="card-title fw-bold fs-5">
+                Consultation
+              </div>
+              <div class="card-text" style="text-align:justify">
+                Our experience building in the
+                Commercial field includes Showrooms,
+                Supermalls and Office Buildings
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="./pictures/Development.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="card-title fw-bold fs-5">
+                Development
+              </div>
+              <div class="card-text" style="text-align:justify">
+                Residential development is the
+                beginning that has shaped us to this
+                day. Our development includes
+                Houses & Apartments
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- what make us difference -->
+    <div class="container py-5 mt-3">
+      <div class="row">
+        <div class="col-md-6 col-sm-10 mx-auto text-center">
+          <h1>
+            What Make Us
+            Different?
+          </h1>
+        </div>
+
+        <div class="col-md-6 col-sm-10 mx-auto">
+          <p class="color-brown">
+            Check out our best service you can possibly orders in building
+            your company and don't forget to ask via our email or our
+            customer service if you are interested in using our services
+          </p>
+        </div>
+      </div>
+
+      <!-- pictures -->
+      <div class="row py-5">
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <div class="rounded-circle bg-blue-50 d-flex align-items-center
+                justify-content-center" style="width:60px; height:60px;">
+              <div class="rounded-circle d-flex justify-content-center
+                  align-items-center bg-dark-blue" style="width:50px;
+                  height:50px;">
+                <img src="./pictures/bag.png" style="width:25px; height:25px;" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-title fw-bold fs-4">
+                Experienced
+              </div>
+              <div class="card-text" style="text-align:justify">
+                Our experience of 25 years of
+                building and making
+                achievements in the world
+                of development
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <div class="rounded-circle bg-blue-50 d-flex align-items-center
+                justify-content-center" style="width:60px; height:60px;">
+              <div class="rounded-circle d-flex justify-content-center
+                  align-items-center bg-dark-blue" style="width:50px;
+                  height:50px;">
+                <img src="./pictures/vector2.png" style="width:25px;
+                    height:25px;" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-title fw-bold fs-4">
+                competitive price
+              </div>
+              <div class="card-text" style="text-align:justify">
+                The prices we offer you are
+                very competitive without
+                reducing the quality of the
+                company's work in the
+                slightest
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <div class="rounded-circle bg-blue-50 d-flex align-items-center
+                justify-content-center" style="width:60px; height:60px;">
+              <div class="rounded-circle d-flex justify-content-center
+                  align-items-center bg-dark-blue" style="width:50px;
+                  height:50px;">
+                <img src="./pictures/vector3.png" style="width:25px;
+                    height:25px;" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-title fw-bold fs-4">
+                On Time
+              </div>
+              <div class="card-text" style="text-align:justify">
+                We prioritize the quality of
+                our work and finish it on time
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <div class="rounded-circle bg-blue-50 circle-div d-flex
+                align-items-center justify-content-center" style="width:60px;
+                height:60px;">
+              <div class="rounded-circle d-flex justify-content-center
+                  align-items-center bg-dark-blue" style="width:50px;
+                  height:50px;">
+                <img src="./pictures/vector4.png" style="width:25px;
+                    height:25px;" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-title fw-bold fs-4">
+                Quality Service
+              </div>
+              <div class="card-text" style="text-align:start">
+                The material determines the
+                building itself so we
+                recommend that you use
+                the best & quality materials
+                in its class.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- meet and talk with our best architecture -->
+    <div class="container architecture">
+      <div class="row row-gap-3">
+        <div class="col-lg-7 col-md-10 col-sm-10 position-relative architc-picture-building">
+          <div class="architect">
+            <img src="./pictures/building.png" alt="">
+          </div>
+          <div class="py-2 architc-info">
+            <div class="p-2 card bg-dark-blue">
+              <img src="./pictures/architc.png" style="width:100px; height:100px; border-radius:50%; margin:0px auto;"
+                alt="">
+              <div class="card-body text-white">
+                <div class="card-title fs-4 text-center">
+                  Joshua Russell
+                </div>
+                <div class="card-text">
+                  More than 20 years of experience
+                  in the field architecture and has
+                  worked on project up to 100+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 d-flex  align-items-center flex-column justify-content-center column-gap-3">
+          <h1>
+            Meet and talk with
+            our best architecture
+          </h1>
+          <p>
+            All our teams are professional and competent in
+            their fields and will help you realize your dream
+            building with the excellent result.
+          </p>
+          <button class="btn rounded-0 px-3 py-2 text-white" style="background:#0A72AD">
+            See all team
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- our story -->
+    <div class="container py-5 mt-3">
+      <div class="row row-gap-2">
+        <div class="col-md-6 col-sm-10 mx-auto d-flex flex-column
+            justify-content-evenly">
+          <h1 class="fw-bold">
+            Our Story
+          </h1>
+          <p class="color-brown">
+            Established in 1992, PT. Wahana Cipta operates as a General
+            Contracting company with a footprint that we have planted
+            throughout Indonesia. Initially, we focused on construction in
+            the field of residential housing development in Jakarta.
+            As the company grows, now we are present as a reliable...
+          </p>
+          <button class="btn rounded-0 px-3 py-2 text-white" style="background:#0A72AD; width:fit-content;">
+            See More
+          </button>
+        </div>
+
+        <div class="col-md-6 col-sm-10 mx-auto">
+          <img src="./pictures/building2.png" class="card-img-top" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- news -->
+    <div class="container py-5 mt-3">
+      <h1>News</h1>
+      <div class="row py-5 row-gap-4">
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="./pictures/news1.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="card-title fw-bold fs-5">
+                Brand New Investment Opportunity for Investors
+              </div>
+              <div class="card-text">
+                This project is built by blue world city
+                in collaboration with JAN’S VISION.
+                It’s huge opportunity for the investors
+                who wants to make profits and benefit
+                themselfs ... Read more
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="./pictures/news2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="card-title fw-bold fs-5">
+                Brand New Investment Opportunity for Investors
+              </div>
+              <div class="card-text">
+                This project is built by blue world city
+                in collaboration with JAN’S VISION.
+                It’s huge opportunity for the investors
+                who wants to make profits and benefit
+                themselfs ... Read more
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
+          <div class="card border-0">
+            <img src="./pictures/news3.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="card-title fw-bold fs-5">
+                Brand New Investment Opportunity for Investors
+              </div>
+              <div class="card-text">
+                This project is built by blue world city
+                in collaboration with JAN’S VISION.
+                It’s huge opportunity for the investors
+                who wants to make profits and benefit
+                themselfs ... Read more
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our collection -->
+    <div class="container">
+      <h1>
+        Our collection
+        best project
+      </h1>
+      <div class="row py-5 h-100 min-vh-100 row-gap-3">
+        <div class="col-md-6 col-lg-3 col-sm-6 over d-flex
+            justify-content-center">
+          <div class="card border-0 h-100 position-relative">
+
+            <img src="./pictures/collection11.png" style="object-fit:cover;" class="card-img-top h-100" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 over d-flex
+            justify-content-center">
+          <div class="card border-0 h-100 position-relative">
+            <img src="./pictures/collection2.png" style="object-fit:cover;" class="card-img-top h-100" alt="">
+            <div class="bg-white py-3 px-2 mx-2 d-flex
+                justify-content-between" style="position:absolute; bottom:5px;
+                width:95%;">
+              <div class="" style="width:fit-content">
+                <h5>
+                  Treasury Tower
+                </h5>
+                <h6 class="color-brown">
+                  Project Completed
+                </h6>
+              </div>
+              <div class="" style="width:fit-content">
+                <button class="btn rounded-0 px-3 py-2 text-white" style="background:#0A72AD; width:fit-content;
+                    font-size:18px;">
+                  <i class="bi bi-arrow-right text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 over d-flex
+            justify-content-center">
+          <div class="card border-0 h-100 position-relative">
+            <img src="./pictures/collection3.png" style="object-fit:cover;" class="card-img-top h-100" alt="">
+          </div>
+        </div>
+        <luiv class="col-md-6 col-lg-3 col-sm-6 over d-flex
+            justify-content-center">
+          <div class="card border-0 h-100 position-relative">
+            <img src="./pictures/collection1.png" style="object-fit:cover;" class="card-img-top h-100" alt="">
+          </div>
+      </div>
+      </dluv>
+    </div>
+  </div>
+
+  <!-- footer poration -->
+  <div class="container-fluid bg-dark-blue position-relative py-5 footerMain">
+    <div class="container what-we-done bg-dark-blue d-block pt-5 pl-3">
+      <div class="row ">
+        <div class="owner-img col-lg-6 col-md-10 col-sm-10 position-relative ">
+          <div class="card border-0" style="background:none;" width="200px">
+            <img src="./pictures/owner.png" alt="" class="ownerImage">
+          </div>
+          <div class="owner-text">
+            <div class="card owner-info">
+              <div class="card-body position-relative">
+                <div class="w-100 d-flex justify-content-center">
+                  <div class="cotation bg-white">
+                    <img src="./pictures/cotation.png" alt="">
+                  </div>
+                </div>
+                <div class="card-title fs-4 text-center">
+                  Jacob Molen
+                </div>
+                <div class="card-text">
+                  We like the final result this project,
+                  in extraordinary and also provides
+                  the best service to the client
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 d-flex justify-content-center
+            align-items-center mx-auto text-white">
+          <div class="review mx-auto">
+            <h1>
+              What we have done &
+              what our Customers say
+            </h1>
+            <p class="lh-lg">
+              We are to help you build a excellent build, with
+              us nothing is impossible. See what we have done
+              and what they have to say about our work perform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-6 text-white">
+            <div class="d-flex justify-content-start gap-4 pb-2">
+              <img src="./pictures/logo.png" style="width:50px;
+                  height:auto;" />
+              <div class="footer-title text-white">
+                <h1>
+                  Jan’s Vision
+                </h1>
+                <h3>
+                  Real Estate Consultants
+                </h3>
+                <h6 class="color-brown">
+                  Marketing & Developers Pvt Ltd
+                </h6>
+              </div>
+            </div>
+            <!-- address -->
+            <p>
+              Address: Office #2 Block B PDA Commercial Complex Hayatabad
+            </p>
+            <p>
+              Contacts: 0333 9109448
+              091 5819922 091 5823089
+            </p>
+            <div class="d-flex gap-4 flex-wrap text-white">
+              <div class="circle-div-text"> <i class="bi bi-google"></i></div>
+              <div class="circle-div-text"> <i class="bi bi-twitter"></i></i></div>
+              <div class="circle-div-text"> <i class="bi bi-instagram"></i></div>
+              <div class="circle-div-text">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <div class="circle-div-text">
+                <i class="bi bi-envelope"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-white">
+            <div class="d-flex justify-content-between flex-column
+                align-items-center">
+              <h6>Company</h6>
+              <h6>About</h6>
+              <h6>Home</h6>
+              <h6>Contact</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
