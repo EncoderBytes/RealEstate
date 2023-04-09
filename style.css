@@ -46,6 +46,12 @@
     .nav-link:hover{
       color:white;
     }
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
 /* for header text */
 .info-header {
     margin-top: 100px;
@@ -75,6 +81,12 @@
     background:#26285B; color:white; left:0px; padding: 3px 10px;
 }
 @media only screen and (max-width: 991px) {
+    .active-link{
+        color: #C4C4C4;
+      }
+      .nav-link:hover{
+        color:black;
+      }
     .hide{
         display: none;
         visibility: hidden;
