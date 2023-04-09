@@ -180,6 +180,16 @@
           height:400px;
         }
       }
+
+      .nav-link{
+    color:#7A7A7A;
+    }
+    .active-link{
+      color: black;
+    }
+    .nav-link:hover{
+      color:black;
+    }
   </style>
 </head>
 
@@ -187,7 +197,7 @@
 
   <div class="container-fluid">
     <div class="container position-relative w-100">
-      <nav class="navbar navbar-expand-lg w-100">
+      <nav class="navbar navbar-expand-lg w-100 poppins">
         <div class="container ">
           <a class="navbar-brand" href="/"><img src="./pictures/logo.png" style="width:50%;
                 height:auto;" /></a>
@@ -200,7 +210,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-2 gap-0 column-gap-5
                 text-center rounded">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active-link" aria-current="page" href="/">Home</a>
               </li>
              
               <li class="nav-item">
@@ -236,7 +246,7 @@
           <h5 class="color-blue-50">
             Marketing & Developers Pvt Ltd
           </h5>
-          <p class="color-brown py-2">​More than 100 building and housing
+          <p class="color-brown py-2 poppins fw-normal">​More than 100 building and housing
             projects that we have built.
             The building owner chose us over other contractors in Jakarta,
             because our work is different</p>
@@ -268,13 +278,19 @@
       <div class="col-lg-5 col-md-10 pt-5 building-text overflow-hidden">
         <img src="./pictures/Frame.png" class="bulding-img" alt="">
 
-        <div class="building-down-text d-flex align-items-center">
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class=" mx-auto d-flex flex-column text-center">
-                <h1>25<span style="font-size:16px;">Years</span></h1>
-                <h6>Operated</h6>
+        <div class="building-down-text d-flex align-items-center ">
+          <div class="row ">
+            <div class="col-md-4 col-sm-12 d-flex align-items-center poppins text-white position-relative" style="font-weight:700; font-size:36px;">
+              <div class="py-2 mx-auto d-flex flex-column text-center  align-items-center" style="width:fit-content">
+                <h1 style="line-height: 20px;">25<span style="font-size:16px;">Years</span>
+                  <span class="fs-5">Operated</span>
+                </h1>
+               
+                <span class="text-white position-absolute hide" style="right:10px; top:0px; font-size:16px;">
+                  <i class="bi bi-gear-wide"></i>
+                </span>
               </div>
+              
             </div>
            <div class="col-md-8 col-sm-12">
             <p class="">
@@ -322,24 +338,20 @@
           </div>
         </div>
       </div>
-      <!-- <img src="./pictures/adira.png" alt="" style="width:100px; height:auto;">
-        <img src="./pictures/adhimix.png" alt="" style="width:100px; height:auto;">
-        <img src="./pictures/Holcim_.png" alt="" style="width:100px; height:auto;">
-        <img src="./pictures/mnc.png" alt="" style="width:100px; height:auto;">
-        <img src="./pictures/Telkomsel.png" alt="" style="width:100px; height:auto;"> -->
+     
     </div>
 
     <!-- services -->
     <div class="container py-5 mt-3">
-      <div class="row">
-        <div class="col-md-6 col-sm-10 mx-auto text-center">
+      <div class="row ">
+        <div class="col-md-6 col-sm-10  poppins">
           <h1>
-            Our Services
+            Our <br> Services
           </h1>
         </div>
 
-        <div class="col-md-6 col-sm-10 mx-auto">
-          <p class="color-brown">
+        <div class="col-md-6 col-sm-10  poppins">
+          <p class="color-brown" style="font-weight:normal;">
             Check out our best service you can possibly orders in building
             your company and don't forget to ask via our email or our
             customer service if you are interested in using our services
@@ -348,7 +360,7 @@
       </div>
 
       <!-- pictures -->
-      <div class="row py-5">
+      <div class="row py-5 poppins">
         <div class="col-md-4 col-sm-6 d-flex justify-content-center">
           <div class="card border-0">
             <img src="./pictures/marketing.png" class="card-img-top" alt="">
@@ -356,7 +368,7 @@
               <div class="card-title fw-bold fs-5">
                 Marketing
               </div>
-              <div class="card-text" style="text-align:justify">
+              <div class="card-text fw-normal color-brown" style="font-weight:normal;text-align:justify">
                 Industrial development is our main
                 line of business. We do Factory
                 Construction, Warehouse and others
@@ -371,7 +383,7 @@
               <div class="card-title fw-bold fs-5">
                 Consultation
               </div>
-              <div class="card-text" style="text-align:justify">
+              <div class="card-text fw-normal color-brown" style="font-weight:normal;text-align:justify">
                 Our experience building in the
                 Commercial field includes Showrooms,
                 Supermalls and Office Buildings
@@ -386,7 +398,7 @@
               <div class="card-title fw-bold fs-5">
                 Development
               </div>
-              <div class="card-text" style="text-align:justify">
+              <div class="card-text fw-normal color-brown" style="font-weight:normal;text-align:justify">
                 Residential development is the
                 beginning that has shaped us to this
                 day. Our development includes
@@ -400,16 +412,16 @@
 
     <!-- what make us difference -->
     <div class="container py-5 mt-3">
-      <div class="row">
-        <div class="col-md-6 col-sm-10 mx-auto text-center">
+      <div class="row poppins">
+        <div class="col-md-6 col-sm-10 ">
           <h1>
-            What Make Us
+            What Make Us <br>
             Different?
           </h1>
         </div>
 
-        <div class="col-md-6 col-sm-10 mx-auto">
-          <p class="color-brown">
+        <div class="col-md-6 col-sm-10">
+          <p class="fw-normal color-brown " style="">
             Check out our best service you can possibly orders in building
             your company and don't forget to ask via our email or our
             customer service if you are interested in using our services
@@ -418,7 +430,7 @@
       </div>
 
       <!-- pictures -->
-      <div class="row py-5">
+      <div class="row py-5 poppins">
         <div class="col-md-3 col-sm-6 d-flex justify-content-center">
           <div class="card border-0">
             <div class="rounded-circle bg-blue-50 d-flex align-items-center
@@ -433,7 +445,7 @@
               <div class="card-title fw-bold fs-4">
                 Experienced
               </div>
-              <div class="card-text" style="text-align:justify">
+              <div class="card-text color-brown fw-normal " style="text-align:justify">
                 Our experience of 25 years of
                 building and making
                 achievements in the world
@@ -457,7 +469,7 @@
               <div class="card-title fw-bold fs-4">
                 competitive price
               </div>
-              <div class="card-text" style="text-align:justify">
+              <div class="card-text color-brown fw-normal" style="text-align:justify">
                 The prices we offer you are
                 very competitive without
                 reducing the quality of the
@@ -482,7 +494,7 @@
               <div class="card-title fw-bold fs-4">
                 On Time
               </div>
-              <div class="card-text" style="text-align:justify">
+              <div class="card-text color-brown fw-normal" style="text-align:justify">
                 We prioritize the quality of
                 our work and finish it on time
               </div>
@@ -505,7 +517,7 @@
               <div class="card-title fw-bold fs-4">
                 Quality Service
               </div>
-              <div class="card-text" style="text-align:start">
+              <div class="card-text fw-normal color-brown" style="text-align:start">
                 The material determines the
                 building itself so we
                 recommend that you use
@@ -533,10 +545,10 @@
               <img src="./pictures/architc.png" style="width:100px; height:100px; border-radius:50%; margin:0px auto;"
                 alt="">
               <div class="card-body text-white">
-                <div class="card-title fs-4 text-center">
+                <div class="card-title fs-4 text-center poppins">
                   Joshua Russell
                 </div>
-                <div class="card-text">
+                <div class="card-text fs-normal">
                   More than 20 years of experience
                   in the field architecture and has
                   worked on project up to 100+
@@ -545,12 +557,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-10 col-sm-10 d-flex  align-items-center flex-column justify-content-center column-gap-3">
+        <div class="col-lg-5 col-md-10 col-sm-10 d-flex  align-items-center flex-column justify-content-center column-gap-3 poppins">
           <h1>
             Meet and talk with
             our best architecture
           </h1>
-          <p>
+          <p class="fw-normal color-brown">
             All our teams are professional and competent in
             their fields and will help you realize your dream
             building with the excellent result.
@@ -568,12 +580,12 @@
     <!-- our story -->
     <div class="container py-5 mt-3">
       <div class="row row-gap-2">
-        <div class="col-md-6 col-sm-10 mx-auto d-flex flex-column
-            justify-content-evenly">
-          <h1 class="fw-bold">
+        <div class="col-md-6 col-sm-10 d-flex flex-column
+            justify-content-evenly poppins">
+          <h1 class="">
             Our Story
           </h1>
-          <p class="color-brown">
+          <p class="color-brown fw-normal">
             Established in 1992, PT. Wahana Cipta operates as a General
             Contracting company with a footprint that we have planted
             throughout Indonesia. Initially, we focused on construction in
@@ -585,7 +597,7 @@
           </button>
         </div>
 
-        <div class="col-md-6 col-sm-10 mx-auto">
+        <div class="col-md-6 col-sm-10">
           <img src="./pictures/building2.png" class="card-img-top" alt="">
         </div>
       </div>
@@ -593,7 +605,7 @@
     </div>
 
     <!-- news -->
-    <div class="container py-5 mt-3">
+    <div class="container py-5 mt-3 poppins">
       <h1>News</h1>
       <div class="row py-5 row-gap-4">
         <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
@@ -603,7 +615,7 @@
               <div class="card-title fw-bold fs-5">
                 Brand New Investment Opportunity for Investors
               </div>
-              <div class="card-text">
+              <div class="card-text color-brown fw-normal">
                 This project is built by blue world city
                 in collaboration with JAN’S VISION.
                 It’s huge opportunity for the investors
@@ -620,7 +632,7 @@
               <div class="card-title fw-bold fs-5">
                 Brand New Investment Opportunity for Investors
               </div>
-              <div class="card-text">
+              <div class="card-text color-brown fw-normal">
                 This project is built by blue world city
                 in collaboration with JAN’S VISION.
                 It’s huge opportunity for the investors
@@ -637,7 +649,7 @@
               <div class="card-title fw-bold fs-5">
                 Brand New Investment Opportunity for Investors
               </div>
-              <div class="card-text">
+              <div class="card-text color-brown fw-normal">
                 This project is built by blue world city
                 in collaboration with JAN’S VISION.
                 It’s huge opportunity for the investors
@@ -651,7 +663,7 @@
     </div>
 
     <!-- our collection -->
-    <div class="container">
+    <div class="container poppins">
       <h1>
         Our collection
         best project
@@ -712,7 +724,7 @@
           <div class="card border-0" style="background:none;" width="200px">
             <img src="./pictures/owner.png" alt="" class="ownerImage">
           </div>
-          <div class="owner-text">
+          <div class="owner-text poppins">
             <div class="card owner-info">
               <div class="card-body position-relative">
                 <div class="w-100 d-flex justify-content-center">
@@ -723,7 +735,7 @@
                 <div class="card-title fs-4 text-center">
                   Jacob Molen
                 </div>
-                <div class="card-text">
+                <div class="card-text  color-brown fw-normal">
                   We like the final result this project,
                   in extraordinary and also provides
                   the best service to the client
@@ -732,14 +744,14 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-10 col-sm-10 d-flex justify-content-center
-            align-items-center mx-auto text-white">
+        <div class="col-lg-6 col-md-10 col-sm-10 d-flex justify-content-center
+            align-items-center mx-auto text-white poppins">
           <div class="review mx-auto">
             <h1>
               What we have done &
               what our Customers say
             </h1>
-            <p class="lh-lg">
+            <p class="lh-lg fw-normal ">
               We are to help you build a excellent build, with
               us nothing is impossible. See what we have done
               and what they have to say about our work perform.
@@ -750,11 +762,11 @@
     </div>
 
     <footer>
-      <div class="container pt-3">
-        <div class="row">
-          <div class="col-md-6 text-white">
+      <div class="container pt-3 ">
+        <div class="row row-gap-5">
+          <div class="col-md-6 text-white order-1 order-md-0 mosterrat" >
             <div class="d-flex justify-content-start gap-4 pb-2">
-              <img src="./pictures/logo.png" style="width:50px;
+              <img src="../pictures/logo.png" style="width:50px;
                   height:auto;" />
               <div class="footer-title text-white">
                 <h1>
@@ -788,9 +800,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 text-white">
+          <div class="col-md-6 text-white order-0 order-md-1">
             <div class="d-flex justify-content-between flex-column
-                align-items-center">
+                align-items-center gap-3 h-75 dm-sans">
               <h6>Company</h6>
               <h6>About</h6>
               <h6>Home</h6>

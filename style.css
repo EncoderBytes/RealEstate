@@ -1,6 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
   .mosterrat{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -9,6 +10,7 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
   }
+  
   .dm-sans{
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
@@ -23,6 +25,7 @@
     position: absolute;
     top: 0px;
     z-index: 3333;
+
 }
 
 
@@ -34,7 +37,15 @@
     justify-content: center;
     background: #26285B;
 }
-
+.nav-link{
+    color:#C4C4C4;
+    }
+    .active-link{
+      color: white;
+    }
+    .nav-link:hover{
+      color:white;
+    }
 /* for header text */
 .info-header {
     margin-top: 100px;
@@ -64,6 +75,10 @@
     background:#26285B; color:white; left:0px; padding: 3px 10px;
 }
 @media only screen and (max-width: 991px) {
+    .hide{
+        display: none;
+        visibility: hidden;
+    }
 
     /* line 26, E:/161 Real estate/161_Real_state_html/sass/_menu.scss */
     .navbar {
