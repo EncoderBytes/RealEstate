@@ -69,16 +69,19 @@
       }
 
       .owner-img {
-        width: 90%;
+        width: 100%;
+        margin: 0px auto;
       }
 
       .owner-img .owner-info {
-        width: 280px;
+        width: 400px;
         height: fit-content;
-        position: absolute;
-        bottom: -30px;
-        left: auto;
-        right: 120px;
+        position: relative;
+        top: -50px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
     }
@@ -148,47 +151,58 @@
     }
 
     /* architecture section code  */
-    .architect img{
-        width:70%; height:auto; object-fit: cover;
-      }
-      .architc-info{
-        position: absolute; width: 290px; left: 40%;
-          right: 0;
-          top: 30%;
-          bottom: 0;
-          margin: auto;
-      }
-      @media only screen and (max-width: 770px) {
-        .architect img{
-          width:100%;
-        }
-      }
-      @media only screen and (max-width: 550px) {
-        .architc-picture-building{
-          height: 450px;
-        }
-        .architc-info{
-         
-          position: relative;
-          left: 0; bottom:0px;
-          top:-200px;
-        }
-      }
-
-      @media only screen and (max-width: 380px) {
-        .architc-picture-building{
-          height:400px;
-        }
-      }
-
-      .nav-link{
-    color:#7A7A7A;
+    .architect img {
+      width: 70%;
+      height: auto;
+      object-fit: cover;
     }
-    .active-link{
+
+    .architc-info {
+      position: absolute;
+      width: 290px;
+      left: 40%;
+      right: 0;
+      top: 30%;
+      bottom: 0;
+      margin: auto;
+    }
+
+    @media only screen and (max-width: 770px) {
+      .architect img {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 550px) {
+      .architc-picture-building {
+        height: 450px;
+      }
+
+      .architc-info {
+
+        position: relative;
+        left: 0;
+        bottom: 0px;
+        top: -200px;
+      }
+    }
+
+    @media only screen and (max-width: 380px) {
+      .architc-picture-building {
+        height: 400px;
+      }
+    }
+
+    .nav-link {
+      color: #7A7A7A;
+    }
+
+    .active-link {
       color: black;
     }
-    .nav-link:hover{
-      color:black;
+
+    .nav-link:hover {
+      color: black;
     }
   </style>
 </head>
@@ -212,7 +226,7 @@
               <li class="nav-item">
                 <a class="nav-link active-link" aria-current="page" href="./index.html">Home</a>
               </li>
-             
+
               <li class="nav-item">
                 <a class="nav-link" href="./Src/services.html">Services</a>
               </li>
@@ -280,25 +294,26 @@
 
         <div class="building-down-text d-flex align-items-center ">
           <div class="row ">
-            <div class="col-md-4 col-sm-12 d-flex align-items-center poppins text-white position-relative" style="font-weight:700; font-size:36px;">
+            <div class="col-md-4 col-sm-12 d-flex align-items-center poppins text-white position-relative"
+              style="font-weight:700; font-size:36px;">
               <div class="py-2 mx-auto d-flex flex-column text-center  align-items-center" style="width:fit-content">
                 <h1 style="line-height: 20px;">25<span style="font-size:16px;">Years</span>
                   <span class="fs-5">Operated</span>
                 </h1>
-               
+
                 <span class="text-white position-absolute hide" style="right:10px; top:0px; font-size:16px;">
                   <i class="bi bi-gear-wide"></i>
                 </span>
               </div>
-              
+
             </div>
-           <div class="col-md-8 col-sm-12">
-            <p class="">
-              As a trusted general project that has been
-              operating for 25 years, our commitment is
-              always to prioritize our client satisfaction
-            </p>
-           </div>
+            <div class="col-md-8 col-sm-12">
+              <p class="">
+                As a trusted general project that has been
+                operating for 25 years, our commitment is
+                always to prioritize our client satisfaction
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -338,7 +353,7 @@
           </div>
         </div>
       </div>
-     
+
     </div>
 
     <!-- services -->
@@ -412,6 +427,7 @@
 
     <!-- what make us difference -->
     <div class="container py-5 mt-3">
+      <div class="my-2" style="width:90px; height:9px;background: linear-gradient(90deg, #26285B -2.22%, #2991CC 67.22%);"></div>
       <div class="row poppins">
         <div class="col-md-6 col-sm-10 ">
           <h1>
@@ -557,7 +573,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-10 col-sm-10 d-flex  align-items-center flex-column justify-content-center column-gap-3 poppins">
+        <div
+          class="col-lg-5 col-md-10 col-sm-10 d-flex  align-items-center flex-column justify-content-center column-gap-3 poppins">
           <h1>
             Meet and talk with
             our best architecture
@@ -718,35 +735,94 @@
 
   <!-- footer poration -->
   <div class="container-fluid bg-dark-blue position-relative py-5 footerMain">
-    <div class="container what-we-done bg-dark-blue d-block pt-5 pl-3">
-      <div class="row ">
-        <div class="owner-img col-lg-6 col-md-10 col-sm-10 position-relative ">
-          <div class="card border-0" style="background:none;" width="200px">
-            <img src="./pictures/owner.png" alt="" class="ownerImage">
-          </div>
-          <div class="owner-text poppins">
-            <div class="card owner-info">
-              <div class="card-body position-relative">
-                <div class="w-100 d-flex justify-content-center" >
-                  <div class="cotation bg-white" style="box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);;">
-                    <img src="./pictures/cotation.png" alt="">
+    <div class="container what-we-done d-block pt-5 pl-3 mb-md-5 mb-sm-2">
+
+
+
+
+      <div class="row " style="height:100%;">
+        <div class="owner-img col-lg-6 col-md-10 col-sm-10 position-relative overflow-hidden" style="height:100%">
+          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner" style="overflow:visible; height:100%;">
+              <div class="carousel-item active" style="height:100%;">
+                <div class="card border-0" style="background:none;" width="200px">
+                  <img src="./pictures/owner.png" alt="" class="ownerImage">
+                </div>
+                <div class="owner-text poppins">
+                  <div class="card owner-info">
+                    <div class="card-body position-relative">
+                      <div class="w-100 d-flex justify-content-center">
+                        <div class="cotation bg-white" style="box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);;">
+                          <img src="./pictures/cotation.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-title fs-4 text-center">
+                        Jacob Molen
+                      </div>
+                      <div class="card-text  color-brown fw-normal">
+                        We like the final result this project,
+                        in extraordinary and also provides
+                        the best service to the client
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card-title fs-4 text-center">
-                  Jacob Molen
+              </div>
+              <div class="carousel-item">
+                <div class="card border-0" style="background:none;" width="200px">
+                  <img src="./pictures/owner.png" alt="" class="ownerImage">
                 </div>
-                <div class="card-text  color-brown fw-normal">
-                  We like the final result this project,
-                  in extraordinary and also provides
-                  the best service to the client
+                <div class="owner-text poppins">
+                  <div class="card owner-info">
+                    <div class="card-body position-relative">
+                      <div class="w-100 d-flex justify-content-center">
+                        <div class="cotation bg-white" style="box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);;">
+                          <img src="./pictures/cotation.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-title fs-4 text-center">
+                        Jacob Molen
+                      </div>
+                      <div class="card-text  color-brown fw-normal">
+                        We like the final result this project,
+                        in extraordinary and also provides
+                        the best service to the client
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card border-0" style="background:none;" width="200px">
+                  <img src="./pictures/owner.png" alt="" class="ownerImage">
+                </div>
+                <div class="owner-text poppins">
+                  <div class="card owner-info">
+                    <div class="card-body position-relative">
+                      <div class="w-100 d-flex justify-content-center">
+                        <div class="cotation bg-white" style="box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);;">
+                          <img src="./pictures/cotation.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-title fs-4 text-center">
+                        Jacob Molen
+                      </div>
+                      <div class="card-text  color-brown fw-normal">
+                        We like the final result this project,
+                        in extraordinary and also provides
+                        the best service to the client
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
         <div class="col-lg-6 col-md-10 col-sm-10 d-flex justify-content-center
-            align-items-center mx-auto text-white poppins">
-          <div class="review mx-auto">
+             mx-auto text-white poppins">
+          <div class="review mx-auto ">
             <h1>
               What we have done &
               what our Customers say
@@ -756,62 +832,75 @@
               us nothing is impossible. See what we have done
               and what they have to say about our work perform.
             </p>
+            <div class="d-flex justify-content-end align-items-center positon-relative gap-2 py-md-5 gap-3 mb-3">
+              <button class="bg-dark-blue border-0 bg-blue-30 text-white fs-2 fw-bold" type="button" data-bs-target="#carouselExampleRide"
+              data-bs-slide="prev">
+              <span class="bg-none" aria-hidden="true"> <i class="bi bi-arrow-left"></i></span>
+              
+              </button>
+              <button class="bg-dark-blue border-0 bg-blue-30 text-white fs-2 fw-bold" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="" aria-hidden="true"> <i class="bi bi-arrow-right"></i></span>
+                
+              </button>
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="container pt-3 ">
-        <div class="row row-gap-5">
-          <div class="col-md-6 text-white order-1 order-md-0 mosterrat" >
-            <div class="d-flex justify-content-start gap-4 pb-2">
-              <img src="../pictures/logo.png" style="width:50px;
+      <footer>
+        <div class="container pt-3">
+          <div class="row row-gap-5">
+            <div class="col-md-7 text-white order-1 order-md-0">
+              <div class="d-flex justify-content-start gap-4 pb-2">
+                <img src="../pictures/logo.png" style="width:50px;
                   height:auto;" />
-              <div class="footer-title text-white">
-                <h1>
-                  Jan’s Vision
-                </h1>
-                <h3>
-                  Real Estate Consultants
-                </h3>
-                <h6 class="color-brown">
-                  Marketing & Developers Pvt Ltd
-                </h6>
+                <div class="footer-title text-white">
+                  <h1>
+                    Jan’s Vision
+                  </h1>
+                  <h3>
+                    Real Estate Consultants
+                  </h3>
+                  <h6 class="color-brown">
+                    Marketing & Developers Pvt Ltd
+                  </h6>
+                </div>
+              </div>
+              <!-- address -->
+              <p>
+                Address: Office #2 Block B PDA Commercial Complex Hayatabad
+              </p>
+              <p>
+                Contacts: 0333 9109448
+                091 5819922 091 5823089
+              </p>
+              <div class="d-flex gap-4 flex-wrap text-white">
+                <div class="circle-div-text"> <i class="bi bi-google"></i></div>
+                <div class="circle-div-text"> <i class="bi bi-twitter"></i></i></div>
+                <div class="circle-div-text"> <i class="bi bi-instagram"></i></div>
+                <div class="circle-div-text">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="circle-div-text">
+                  <i class="bi bi-envelope"></i>
+                </div>
               </div>
             </div>
-            <!-- address -->
-            <p>
-              Address: Office #2 Block B PDA Commercial Complex Hayatabad
-            </p>
-            <p>
-              Contacts: 0333 9109448
-              091 5819922 091 5823089
-            </p>
-            <div class="d-flex gap-4 flex-wrap text-white">
-              <div class="circle-div-text"> <i class="bi bi-google"></i></div>
-              <div class="circle-div-text"> <i class="bi bi-twitter"></i></i></div>
-              <div class="circle-div-text"> <i class="bi bi-instagram"></i></div>
-              <div class="circle-div-text">
-                <i class="bi bi-linkedin"></i>
+            <div class="col-md-3 text-white order-0 order-md-1">
+              <div class="d-flex justify-content-between flex-column
+                align-items-center gap-3 h-75">
+                <h6>Company</h6>
+                <h6>About</h6>
+                <h6>Home</h6>
+                <h6>Contact</h6>
               </div>
-              <div class="circle-div-text">
-                <i class="bi bi-envelope"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 text-white order-0 order-md-1">
-            <div class="d-flex justify-content-between flex-column
-                align-items-center gap-3 h-75 dm-sans">
-              <h6>Company</h6>
-              <h6>About</h6>
-              <h6>Home</h6>
-              <h6>Contact</h6>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </div>
 
 
